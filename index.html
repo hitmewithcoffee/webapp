@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayak Rental Form</title>
+    <link rel="stylesheet" href="style.css"
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1> Rent a Kayak @ PAssionWave</h1>
+    <nav>
+        <div class="navbar">
+        <ul>
+          <li><a href="rentalrates.html">Kayak Rental Rates</a></li>
+          <li><a href="index.html">Kayak Rental Form</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+        </div>
+      </nav>
+      <p> 
+        Disclaimer: This website is created for learning purposes only. The information provided here should not be considered professional advice. 
+        Please note that we make no guarantees regarding the accuracy, completeness, or reliability of the contents of this website. 
+        Any actions you take based on the contents of this website are at your own risk. We are not liable for any losses or damages incurred from the use of this website.
+    </p>
+    <main>
+        <h3>
+            Kayak Rental Form @ PAssionWave
+        </h3>
+    <form action="results.html" method="GET">
+        <div>
+            <div class="form-section">
+                <label for="outlet">Select an outlet</label>
+                <br>
+                <select name="outlet" id="outlet">
+                  <option value="Bedok Reservoir">PAssion Wave @ Bedok Reservoir</option>
+                  <option value="East Coast">PAssion Wave @ East Coast</option>
+                  <option value="Jurong Lake Gardens">PAssion Wave @ Jurong Lake Gardens</option>
+                  <option value="Marina Bay">PAssion Wave @ Marina Bay</option>
+                  <option value="Pasir Ris">PAssion Wave @ Pasir Ris</option>
+                  <option value="Sembawang">PAssion Wave @ Sembawang</option>
+                  </select>
+                </br>
+              </div>
+        </div>
+        <div class="form-section">
+            <label for="date">Date</label>
+            <br>
+            <input type="date" name="date" id="date">
+            </br>
+        </div>
+        <div class="form-section">
+            <label for="time">Time (2-hours rental)</label>
+            <br>
+            <select name="time" id="time">
+              <option value="Session 1">9.00am to 11.00 am</option>
+              <option value="Session 2">2.00pm to 4.00pm</option>
+              </select>
+            </br>
+          </div>
+        <div class="form-section">
+            <label for="pax">No. of pax</label>
+            <br>
+            <select name="pax" id="pax">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option> 
+            <option value="5">5</option>
+            <option value="6">6</option> 
+            <option value="7">7</option>
+            <option value="8">8</option> 
+            <option value="9">9</option>
+            <option value="10">10</option>
+            </select>      
+        </br>
+        </div>
+        <div class="form-section">
+            <label for="name">Name</label>
+            <br>
+            <input type="text" name="Name" id="Name" required>
+        </br>
+        </div>
+        <div class="form-section">
+            <label> Mobile number</label>
+            <br>
+            <input type="number" name="MobileNumber" id="MobileNumber" required>
+        </br>
+        </div>
+        <div class="form-section">
+            <label for="email">Email</label>
+            <br>
+            <input type="email" name="Email" id="email" required>
+        </br>
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit & Proceed to payment</button>
+    </form>
+    </main>
+</body>
+</html>
